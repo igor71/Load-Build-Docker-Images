@@ -8,7 +8,7 @@ pipeline {
                 echo "Docker Image Already Exist!!!"
              else
                 pv -f /media/common/DOCKER_IMAGES/TFlow-Build/yi-tflow-build-ssh-0.7-python-v.3.6.3.tar | docker load
-                docker tag 14ba469650ba yi/tflow-build:0.6-python-v.3.6.3
+                docker tag 14ba469650ba yi/tflow-build:0.7-python-v.3.6.3
                 echo "DONE!!!"
              fi
              if test ! -z "$(docker images -q yi/tflow-build:0.7)"; then
