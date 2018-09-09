@@ -21,7 +21,7 @@ pipeline {
                 '''
             }
     }
-	      stage('Test yi/tflow-build:0.7-python-v.3.6.3 Docker Image') { 
+	      stage('Test yi/tflow-build:0.X-python-v.3.6.3 Docker Image') { 
             steps {
                 sh '''#!/bin/bash -xe
 		              echo 'Hello, BUILD-DOCKER!!'
@@ -35,7 +35,7 @@ pipeline {
                    ''' 
             }
         }
-		  stage('Test yi/tflow-build:0.7 Docker Image') { 
+		  stage('Test yi/tflow-build:0.X Docker Image') { 
             steps {
                 sh '''#!/bin/bash -xe
 		              echo 'Hello, BUILD-DOCKER!!'
