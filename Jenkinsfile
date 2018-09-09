@@ -4,7 +4,7 @@ pipeline {
          stage('Import Docker-Build Images') {
             steps {
              sh '''#!/bin/bash -xe
-             if test ! -z "$(docker images -q yi/tflow-build:0.7-python-v.3.6.3)"; then
+             if test ! -z "$(docker images -q yi/tflow-build:0.6-python-v.3.6.3)"; then
                 echo "Docker Image Already Exist!!!"
              else
                 pv -f /media/common/DOCKER_IMAGES/TFlow-Build/yi-tflow-build-ssh-0.7-python-v.3.6.3.tar | docker load
