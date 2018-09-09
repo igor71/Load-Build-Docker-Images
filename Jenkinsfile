@@ -15,7 +15,7 @@ pipeline {
                 echo "Docker Image Already Exist!!!"
                   else
                 pv -f /media/common/DOCKER_IMAGES/TFlow-Build/yi-tflow-build-ssh-0.6.tar | docker load
-                docker tag cf5f331d8ca1 yi/tflow-build:0.6
+                docker tag 0a1860a9598e yi/tflow-build:0.6
                 echo "DONE!!!"
              fi
                 '''
